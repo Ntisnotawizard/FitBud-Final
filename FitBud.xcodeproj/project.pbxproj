@@ -15,6 +15,7 @@
 		8A7D61DF1E9E8A3100614776 /* FitBudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61DE1E9E8A3100614776 /* FitBudTests.swift */; };
 		8A7D61EA1E9E8A3100614776 /* FitBudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61E91E9E8A3100614776 /* FitBudUITests.swift */; };
 		8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */; };
+		8A7D61FA1E9E9D3A00614776 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8A7D61E91E9E8A3100614776 /* FitBudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBudUITests.swift; sourceTree = "<group>"; };
 		8A7D61EB1E9E8A3100614776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				8A7D61D21E9E8A3000614776 /* LaunchScreen.storyboard */,
 				8A7D61D51E9E8A3000614776 /* Info.plist */,
 				8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */,
+				8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */,
 			);
 			path = FitBud;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7D61FA1E9E9D3A00614776 /* LoginViewController.swift in Sources */,
 				8A7D61CC1E9E8A3000614776 /* ViewController.swift in Sources */,
 				8A7D61CA1E9E8A3000614776 /* AppDelegate.swift in Sources */,
 				8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */,

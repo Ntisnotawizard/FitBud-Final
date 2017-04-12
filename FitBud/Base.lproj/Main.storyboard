@@ -28,6 +28,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo7-Xb-acC">
+                                <rect key="frame" x="147" y="318" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.084972219898793444" blue="0.093749294506941472" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2HB-ww-cFe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -40,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="69k-Yp-hCg">
             <objects>
-                <viewController id="nCf-k0-0Ie" sceneMemberID="viewController">
+                <viewController id="nCf-k0-0Ie" customClass="LoginViewController" customModule="FitBud" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2NI-LJ-fyd"/>
                         <viewControllerLayoutGuide type="bottom" id="Lap-sQ-KKw"/>
@@ -87,6 +98,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonTap:" destination="nCf-k0-0Ie" eventType="touchUpInside" id="xrr-Yc-bhk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bId-V2-Xc2">
                                 <rect key="frame" x="147" y="392" width="80" height="30"/>
@@ -109,6 +123,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="userEmailTextField" destination="zNi-Yh-NLS" id="0Ds-sZ-FUI"/>
+                        <outlet property="userPasswordTextField" destination="etf-cx-b1N" id="nXw-7d-CE8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMX-i5-v23" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

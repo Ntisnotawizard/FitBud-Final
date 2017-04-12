@@ -1,5 +1,5 @@
 //
-//  RegisterPageViewController.swift
+//  LoginViewController.swift
 //  FitBud
 //
 //  Created by TheGrandWizard on 12/04/2017.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class RegisterPageViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
-    @IBOutlet weak var repeatPasswordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,57 +25,53 @@ class RegisterPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    @IBAction func registerButtonTap(_ sender: Any) {
+    @IBAction func loginButtonTap(_ sender: Any) {
         
         let userEmail = userEmailTextField.text
         let userPassword = userPasswordTextField.text
-        let userRepeatPassword = repeatPasswordTextField.text
         
+        let userEmailStored = UserDefaults.standard.string(forKey: "userEmail")
         
-        // check for empty fields
+        let userPasswordStored = UserDefaults.standard.string(forKey: "userPassword")
         
-        if((userEmail?.isEmpty)! || (userPassword?.isEmpty)! || ((userRepeatPassword) == nil)){
-         
-            // display alert message
+        if(userEmailStored == userEmail){
+            if(userPasswordStored == userPassword){
+                
+                // Login is successful
+                UserDefaults.standard.set(true, forKey:"isUserLoggedIn")
+                
+                UserDefaults.standard.synchronize()
+                
+                // dismiss login view
+                self.dismiss(animated: true, completion:nil)
+            }
             
-            displayMyAlertMessage(userMessage: "All fields are required")
-            
-            return
+        
         }
         
-        // check if passwords match
+        // check if email is correct
         
-        if(userPassword != userRepeatPassword)
+        if(userEmailStored != userEmail)
         {
             // Display alert message
             
-            displayMyAlertMessage(userMessage: "Passwords do not match")
+            displayMyAlertMessage(userMessage: "This email does not exist")
             
             return
-
+            
         }
         
-        // Store data
+        // check if password is correct
         
-        UserDefaults.standard.set(userEmail, forKey: "userEmail")
-        
-        
-        UserDefaults.standard.set(userPassword, forKey: "userPassword")
-        
-        
-        UserDefaults.standard.synchronize()
-        
-        // display confirmation message
-        
-        let myAlert = UIAlertController(title:"Alert", message: "Registration Successful", preferredStyle: UIAlertControllerStyle.alert)
-        
-        let okAction = UIAlertAction(title:"OK", style: UIAlertActionStyle.default){
-            action in self.dismiss(animated: true, completion:nil)
+        if(userPasswordStored != userPassword)
+        {
+            // Display alert message
+            
+            displayMyAlertMessage(userMessage: "Wrong Password")
+            
+            return
+            
         }
-        
-        myAlert.addAction(okAction)
-        self.present(myAlert, animated:true, completion:nil)
         
     }
     
@@ -89,6 +86,8 @@ class RegisterPageViewController: UIViewController {
         self.present(myAlert, animated: true, completion: nil)
         
     }
+    
+
     /*
     // MARK: - Navigation
 

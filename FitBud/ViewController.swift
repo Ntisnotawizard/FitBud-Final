@@ -21,9 +21,29 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIN")
+        
+        if(!isUserLoggedIn)
+        {
         self.performSegue(withIdentifier: "loginView", sender: self)
+        }
+        
     }
 
+    
+    // enable logout
+    
+    @IBAction func logoutButtonTap(_ sender: Any) {
+        
+        UserDefaults.standard.set(false, forKey: "isUserLoggdIn")
+        UserDefaults.standard.synchronize()
+        
+        self.performSegue(withIdentifier: "loginView", sender: self)
+
+        
+    }
+    
 
 }
 
