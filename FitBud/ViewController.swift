@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIN")
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
         
         if(!isUserLoggedIn)
         {
