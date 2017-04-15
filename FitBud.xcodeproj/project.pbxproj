@@ -16,6 +16,7 @@
 		8A7D61EA1E9E8A3100614776 /* FitBudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61E91E9E8A3100614776 /* FitBudUITests.swift */; };
 		8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */; };
 		8A7D61FA1E9E9D3A00614776 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */; };
+		8A7D61FC1EA2748D00614776 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61FB1EA2748C00614776 /* EditProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8A7D61EB1E9E8A3100614776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8A7D61FB1EA2748C00614776 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				8A7D61D51E9E8A3000614776 /* Info.plist */,
 				8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */,
 				8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */,
+				8A7D61FB1EA2748C00614776 /* EditProfileViewController.swift */,
 			);
 			path = FitBud;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				8A7D61FA1E9E9D3A00614776 /* LoginViewController.swift in Sources */,
 				8A7D61CC1E9E8A3000614776 /* ViewController.swift in Sources */,
 				8A7D61CA1E9E8A3000614776 /* AppDelegate.swift in Sources */,
+				8A7D61FC1EA2748D00614776 /* EditProfileViewController.swift in Sources */,
 				8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +524,7 @@
 				8A7D61F01E9E8A3100614776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A7D61F11E9E8A3100614776 /* Build configuration list for PBXNativeTarget "FitBudTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				8A7D61F31E9E8A3100614776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A7D61F41E9E8A3100614776 /* Build configuration list for PBXNativeTarget "FitBudUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				8A7D61F61E9E8A3100614776 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
