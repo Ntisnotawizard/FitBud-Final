@@ -17,6 +17,12 @@
 		8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */; };
 		8A7D61FA1E9E9D3A00614776 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */; };
 		8A7D61FC1EA2748D00614776 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61FB1EA2748C00614776 /* EditProfileViewController.swift */; };
+		8A7D62031EA378A100614776 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D62021EA378A100614776 /* LeftSideViewController.swift */; };
+		8A7D62051EA378B300614776 /* RightSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D62041EA378B300614776 /* RightSideViewController.swift */; };
+		8A7D62111EA3798000614776 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D62091EA3798000614776 /* MMDrawerBarButtonItem.m */; };
+		8A7D62121EA3798000614776 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D620B1EA3798000614776 /* MMDrawerController.m */; };
+		8A7D62131EA3798000614776 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D620E1EA3798000614776 /* MMDrawerVisualState.m */; };
+		8A7D62141EA3798000614776 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D62101EA3798000614776 /* UIViewController+MMDrawerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,18 @@
 		8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8A7D61FB1EA2748C00614776 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		8A7D62021EA378A100614776 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
+		8A7D62041EA378B300614776 /* RightSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightSideViewController.swift; sourceTree = "<group>"; };
+		8A7D62071EA3797F00614776 /* FitBud-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FitBud-Bridging-Header.h"; sourceTree = "<group>"; };
+		8A7D62081EA3798000614776 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		8A7D62091EA3798000614776 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		8A7D620A1EA3798000614776 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		8A7D620B1EA3798000614776 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		8A7D620C1EA3798000614776 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		8A7D620D1EA3798000614776 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		8A7D620E1EA3798000614776 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		8A7D620F1EA3798000614776 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		8A7D62101EA3798000614776 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +121,7 @@
 		8A7D61C81E9E8A3000614776 /* FitBud */ = {
 			isa = PBXGroup;
 			children = (
+				8A7D62061EA3794100614776 /* MySideMenu */,
 				8A7D61C91E9E8A3000614776 /* AppDelegate.swift */,
 				8A7D61CB1E9E8A3000614776 /* ViewController.swift */,
 				8A7D61CD1E9E8A3000614776 /* Main.storyboard */,
@@ -112,6 +131,8 @@
 				8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */,
 				8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */,
 				8A7D61FB1EA2748C00614776 /* EditProfileViewController.swift */,
+				8A7D62021EA378A100614776 /* LeftSideViewController.swift */,
+				8A7D62041EA378B300614776 /* RightSideViewController.swift */,
 			);
 			path = FitBud;
 			sourceTree = "<group>";
@@ -132,6 +153,23 @@
 				8A7D61EB1E9E8A3100614776 /* Info.plist */,
 			);
 			path = FitBudUITests;
+			sourceTree = "<group>";
+		};
+		8A7D62061EA3794100614776 /* MySideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8A7D62081EA3798000614776 /* MMDrawerBarButtonItem.h */,
+				8A7D62091EA3798000614776 /* MMDrawerBarButtonItem.m */,
+				8A7D620A1EA3798000614776 /* MMDrawerController.h */,
+				8A7D620B1EA3798000614776 /* MMDrawerController.m */,
+				8A7D620C1EA3798000614776 /* MMDrawerController+Subclass.h */,
+				8A7D620D1EA3798000614776 /* MMDrawerVisualState.h */,
+				8A7D620E1EA3798000614776 /* MMDrawerVisualState.m */,
+				8A7D620F1EA3798000614776 /* UIViewController+MMDrawerController.h */,
+				8A7D62101EA3798000614776 /* UIViewController+MMDrawerController.m */,
+				8A7D62071EA3797F00614776 /* FitBud-Bridging-Header.h */,
+			);
+			name = MySideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +241,7 @@
 					8A7D61C51E9E8A3000614776 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = DGJ9JL7A3W;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					8A7D61D91E9E8A3100614776 = {
@@ -271,11 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7D62141EA3798000614776 /* UIViewController+MMDrawerController.m in Sources */,
+				8A7D62131EA3798000614776 /* MMDrawerVisualState.m in Sources */,
 				8A7D61FA1E9E9D3A00614776 /* LoginViewController.swift in Sources */,
+				8A7D62111EA3798000614776 /* MMDrawerBarButtonItem.m in Sources */,
 				8A7D61CC1E9E8A3000614776 /* ViewController.swift in Sources */,
 				8A7D61CA1E9E8A3000614776 /* AppDelegate.swift in Sources */,
 				8A7D61FC1EA2748D00614776 /* EditProfileViewController.swift in Sources */,
+				8A7D62031EA378A100614776 /* LeftSideViewController.swift in Sources */,
 				8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */,
+				8A7D62121EA3798000614776 /* MMDrawerController.m in Sources */,
+				8A7D62051EA378B300614776 /* RightSideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +470,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DGJ9JL7A3W;
 				INFOPLIST_FILE = FitBud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Runthaplay.FitBud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FitBud/FitBud-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -438,11 +486,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DGJ9JL7A3W;
 				INFOPLIST_FILE = FitBud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Runthaplay.FitBud;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FitBud/FitBud-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
