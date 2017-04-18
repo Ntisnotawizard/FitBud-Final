@@ -9,20 +9,22 @@
 /* Begin PBXBuildFile section */
 		8A7D61CA1E9E8A3000614776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61C91E9E8A3000614776 /* AppDelegate.swift */; };
 		8A7D61CC1E9E8A3000614776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61CB1E9E8A3000614776 /* ViewController.swift */; };
-		8A7D61CF1E9E8A3000614776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7D61CD1E9E8A3000614776 /* Main.storyboard */; };
 		8A7D61D11E9E8A3000614776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7D61D01E9E8A3000614776 /* Assets.xcassets */; };
 		8A7D61D41E9E8A3000614776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7D61D21E9E8A3000614776 /* LaunchScreen.storyboard */; };
 		8A7D61DF1E9E8A3100614776 /* FitBudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61DE1E9E8A3100614776 /* FitBudTests.swift */; };
 		8A7D61EA1E9E8A3100614776 /* FitBudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61E91E9E8A3100614776 /* FitBudUITests.swift */; };
 		8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */; };
 		8A7D61FA1E9E9D3A00614776 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */; };
-		8A7D61FC1EA2748D00614776 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61FB1EA2748C00614776 /* EditProfileViewController.swift */; };
 		8A7D62031EA378A100614776 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D62021EA378A100614776 /* LeftSideViewController.swift */; };
 		8A7D62051EA378B300614776 /* RightSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D62041EA378B300614776 /* RightSideViewController.swift */; };
 		8A7D62111EA3798000614776 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D62091EA3798000614776 /* MMDrawerBarButtonItem.m */; };
 		8A7D62121EA3798000614776 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D620B1EA3798000614776 /* MMDrawerController.m */; };
 		8A7D62131EA3798000614776 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D620E1EA3798000614776 /* MMDrawerVisualState.m */; };
 		8A7D62141EA3798000614776 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D62101EA3798000614776 /* UIViewController+MMDrawerController.m */; };
+		8ABB31281EA53C94006272DC /* db.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB31251EA53C94006272DC /* db.jpg */; };
+		8ABB31291EA53C94006272DC /* gm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB31261EA53C94006272DC /* gm.jpg */; };
+		8ABB312A1EA53C94006272DC /* hdh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB31271EA53C94006272DC /* hdh.jpg */; };
+		8ABB312D1EA53CCE006272DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB312B1EA53CCE006272DC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,6 @@
 		8A7D61C61E9E8A3000614776 /* FitBud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7D61C91E9E8A3000614776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A7D61CB1E9E8A3000614776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8A7D61CE1E9E8A3000614776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A7D61D01E9E8A3000614776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A7D61D31E9E8A3000614776 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A7D61D51E9E8A3000614776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		8A7D61EB1E9E8A3100614776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		8A7D61FB1EA2748C00614776 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		8A7D62021EA378A100614776 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
 		8A7D62041EA378B300614776 /* RightSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightSideViewController.swift; sourceTree = "<group>"; };
 		8A7D62071EA3797F00614776 /* FitBud-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FitBud-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -71,6 +71,10 @@
 		8A7D620E1EA3798000614776 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
 		8A7D620F1EA3798000614776 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		8A7D62101EA3798000614776 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		8ABB31251EA53C94006272DC /* db.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = db.jpg; sourceTree = "<group>"; };
+		8ABB31261EA53C94006272DC /* gm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gm.jpg; sourceTree = "<group>"; };
+		8ABB31271EA53C94006272DC /* hdh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hdh.jpg; sourceTree = "<group>"; };
+		8ABB312C1EA53CCE006272DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,16 +125,16 @@
 		8A7D61C81E9E8A3000614776 /* FitBud */ = {
 			isa = PBXGroup;
 			children = (
+				8ABB31241EA53C4B006272DC /* Images */,
 				8A7D62061EA3794100614776 /* MySideMenu */,
 				8A7D61C91E9E8A3000614776 /* AppDelegate.swift */,
 				8A7D61CB1E9E8A3000614776 /* ViewController.swift */,
-				8A7D61CD1E9E8A3000614776 /* Main.storyboard */,
 				8A7D61D01E9E8A3000614776 /* Assets.xcassets */,
+				8ABB312B1EA53CCE006272DC /* Main.storyboard */,
 				8A7D61D21E9E8A3000614776 /* LaunchScreen.storyboard */,
 				8A7D61D51E9E8A3000614776 /* Info.plist */,
 				8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */,
 				8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */,
-				8A7D61FB1EA2748C00614776 /* EditProfileViewController.swift */,
 				8A7D62021EA378A100614776 /* LeftSideViewController.swift */,
 				8A7D62041EA378B300614776 /* RightSideViewController.swift */,
 			);
@@ -170,6 +174,16 @@
 				8A7D62071EA3797F00614776 /* FitBud-Bridging-Header.h */,
 			);
 			name = MySideMenu;
+			sourceTree = "<group>";
+		};
+		8ABB31241EA53C4B006272DC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8ABB31251EA53C94006272DC /* db.jpg */,
+				8ABB31261EA53C94006272DC /* gm.jpg */,
+				8ABB31271EA53C94006272DC /* hdh.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,9 +297,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABB312A1EA53C94006272DC /* hdh.jpg in Resources */,
+				8ABB31291EA53C94006272DC /* gm.jpg in Resources */,
 				8A7D61D41E9E8A3000614776 /* LaunchScreen.storyboard in Resources */,
+				8ABB312D1EA53CCE006272DC /* Main.storyboard in Resources */,
 				8A7D61D11E9E8A3000614776 /* Assets.xcassets in Resources */,
-				8A7D61CF1E9E8A3000614776 /* Main.storyboard in Resources */,
+				8ABB31281EA53C94006272DC /* db.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +333,6 @@
 				8A7D62111EA3798000614776 /* MMDrawerBarButtonItem.m in Sources */,
 				8A7D61CC1E9E8A3000614776 /* ViewController.swift in Sources */,
 				8A7D61CA1E9E8A3000614776 /* AppDelegate.swift in Sources */,
-				8A7D61FC1EA2748D00614776 /* EditProfileViewController.swift in Sources */,
 				8A7D62031EA378A100614776 /* LeftSideViewController.swift in Sources */,
 				8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */,
 				8A7D62121EA3798000614776 /* MMDrawerController.m in Sources */,
@@ -356,20 +372,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8A7D61CD1E9E8A3000614776 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A7D61CE1E9E8A3000614776 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8A7D61D21E9E8A3000614776 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8A7D61D31E9E8A3000614776 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8ABB312B1EA53CCE006272DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ABB312C1EA53CCE006272DC /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
