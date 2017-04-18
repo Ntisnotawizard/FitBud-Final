@@ -25,6 +25,7 @@
 		8ABB31291EA53C94006272DC /* gm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB31261EA53C94006272DC /* gm.jpg */; };
 		8ABB312A1EA53C94006272DC /* hdh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB31271EA53C94006272DC /* hdh.jpg */; };
 		8ABB312D1EA53CCE006272DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB312B1EA53CCE006272DC /* Main.storyboard */; };
+		8ABB312F1EA6522F006272DC /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB312E1EA6522F006272DC /* MyCustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		8ABB31261EA53C94006272DC /* gm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gm.jpg; sourceTree = "<group>"; };
 		8ABB31271EA53C94006272DC /* hdh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hdh.jpg; sourceTree = "<group>"; };
 		8ABB312C1EA53CCE006272DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8ABB312E1EA6522F006272DC /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */,
 				8A7D62021EA378A100614776 /* LeftSideViewController.swift */,
 				8A7D62041EA378B300614776 /* RightSideViewController.swift */,
+				8ABB312E1EA6522F006272DC /* MyCustomTableViewCell.swift */,
 			);
 			path = FitBud;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				8A7D62031EA378A100614776 /* LeftSideViewController.swift in Sources */,
 				8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */,
 				8A7D62121EA3798000614776 /* MMDrawerController.m in Sources */,
+				8ABB312F1EA6522F006272DC /* MyCustomTableViewCell.swift in Sources */,
 				8A7D62051EA378B300614776 /* RightSideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
