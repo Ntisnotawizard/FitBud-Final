@@ -321,6 +321,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="profileItemLabel" destination="Glj-6I-KMl" id="Dde-EW-bYT"/>
+                                            <segue destination="SlZ-nn-ANu" kind="show" identifier="AboutSegue" id="gSa-fI-hzZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -377,7 +378,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KgS-hM-Yuj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="253.59999999999999" y="1602.5487256371816"/>
+            <point key="canvasLocation" x="255" y="1662"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ux9-Xr-jBg">
@@ -405,12 +406,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpx-Qn-l7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410.39999999999998" y="1602.5487256371816"/>
+            <point key="canvasLocation" x="-409" y="1662"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="c5Q-Bf-pjI">
             <objects>
-                <viewController id="SlZ-nn-ANu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" id="SlZ-nn-ANu" customClass="AboutViewController" customModule="FitBud" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DTf-CY-IeG"/>
                         <viewControllerLayoutGuide type="bottom" id="gkr-IN-Wsx"/>
@@ -432,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOQ-JW-lZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1068" y="893.70314842578716"/>
+            <point key="canvasLocation" x="-436" y="913"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Jwd-2e-UuH">
@@ -459,7 +460,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hyu-k9-Vdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1068" y="1602.5487256371816"/>
+            <point key="canvasLocation" x="-979" y="1662"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="u8S-Go-ohY">

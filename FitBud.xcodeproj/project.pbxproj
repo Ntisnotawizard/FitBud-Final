@@ -26,6 +26,8 @@
 		8ABB312A1EA53C94006272DC /* hdh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB31271EA53C94006272DC /* hdh.jpg */; };
 		8ABB312D1EA53CCE006272DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB312B1EA53CCE006272DC /* Main.storyboard */; };
 		8ABB312F1EA6522F006272DC /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB312E1EA6522F006272DC /* MyCustomTableViewCell.swift */; };
+		8ABB31331EA65EF2006272DC /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB31321EA65EF2006272DC /* EditProfileViewController.swift */; };
+		8ABB31351EA65F25006272DC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB31341EA65F25006272DC /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		8ABB31271EA53C94006272DC /* hdh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hdh.jpg; sourceTree = "<group>"; };
 		8ABB312C1EA53CCE006272DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ABB312E1EA6522F006272DC /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
+		8ABB31321EA65EF2006272DC /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		8ABB31341EA65F25006272DC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				8A7D62021EA378A100614776 /* LeftSideViewController.swift */,
 				8A7D62041EA378B300614776 /* RightSideViewController.swift */,
 				8ABB312E1EA6522F006272DC /* MyCustomTableViewCell.swift */,
+				8ABB31321EA65EF2006272DC /* EditProfileViewController.swift */,
+				8ABB31341EA65F25006272DC /* AboutViewController.swift */,
 			);
 			path = FitBud;
 			sourceTree = "<group>";
@@ -338,8 +344,10 @@
 				8A7D61CA1E9E8A3000614776 /* AppDelegate.swift in Sources */,
 				8A7D62031EA378A100614776 /* LeftSideViewController.swift in Sources */,
 				8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */,
+				8ABB31331EA65EF2006272DC /* EditProfileViewController.swift in Sources */,
 				8A7D62121EA3798000614776 /* MMDrawerController.m in Sources */,
 				8ABB312F1EA6522F006272DC /* MyCustomTableViewCell.swift in Sources */,
+				8ABB31351EA65F25006272DC /* AboutViewController.swift in Sources */,
 				8A7D62051EA378B300614776 /* RightSideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

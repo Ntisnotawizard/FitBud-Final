@@ -45,7 +45,52 @@ class LeftSideViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        <#code#>
+        
+        
+        // identify cells tapped
+        /*
+        switch (indexPath.row) {
+        
+        case 0:
+            
+            // trigger when wrong cell is tapped
+            
+            let centerViewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            
+            let centerNavController = UINavigationController(rootViewController: centerViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = centerNavController
+            appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+            
+            break
+            
+        case 1:
+            
+            let aboutViewController = self.storyboard?.instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
+            
+            let aboutNavController = UINavigationController(rootViewController: aboutViewController)
+            
+            let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+            
+            appDelegate.centerContainer!.centerViewController = aboutNavController
+            appDelegate.centerContainer!.toggle(MMDrawerSide.left, animated: true, completion: nil)
+            
+            break
+            
+            prepare(for: a, sender: <#T##Any?#>)
+            
+            default:
+            */
+        
+            
+        
+        
+            print("\(profileItems[indexPath.row]) is selected")
+            
+            
+        //}
     }
 
     

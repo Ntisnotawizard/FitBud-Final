@@ -1,5 +1,5 @@
 //
-//  EditProfileViewController.swift
+//  AboutViewController.swift
 //  FitBud
 //
 //  Created by TheGrandWizard on 18/04/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditProfileViewController: UIViewController {
+class AboutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
