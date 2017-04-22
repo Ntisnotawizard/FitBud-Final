@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MagnetMax
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
