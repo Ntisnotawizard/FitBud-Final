@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07EE5981D87432E256991331 /* Pods_FitBud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6073A6561CCA47519AF70B25 /* Pods_FitBud.framework */; };
+		1B1A11494F2B80A6D801EC31 /* Pods_FitBudUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61AE71577FCAFBA4721BF5FE /* Pods_FitBudUITests.framework */; };
+		8A2579E51EAD4B5C00B5F162 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A2579E41EAD4B5C00B5F162 /* GoogleService-Info.plist */; };
 		8A7D61CA1E9E8A3000614776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61C91E9E8A3000614776 /* AppDelegate.swift */; };
 		8A7D61CC1E9E8A3000614776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61CB1E9E8A3000614776 /* ViewController.swift */; };
 		8A7D61D11E9E8A3000614776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7D61D01E9E8A3000614776 /* Assets.xcassets */; };
@@ -28,6 +31,7 @@
 		8ABB312F1EA6522F006272DC /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB312E1EA6522F006272DC /* MyCustomTableViewCell.swift */; };
 		8ABB31331EA65EF2006272DC /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB31321EA65EF2006272DC /* EditProfileViewController.swift */; };
 		8ABB31351EA65F25006272DC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB31341EA65F25006272DC /* AboutViewController.swift */; };
+		A6F3403B62AA9F2DCDFB3A7F /* Pods_FitBudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9363789CB59E85F7EE2DB91E /* Pods_FitBudTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0299395664B91EA7BB3D26 /* Pods-FitBudUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBudUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBudUITests/Pods-FitBudUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		51748DFCA57F23F3D067DF56 /* Pods-FitBudUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBudUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBudUITests/Pods-FitBudUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6073A6561CCA47519AF70B25 /* Pods_FitBud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AE71577FCAFBA4721BF5FE /* Pods_FitBudUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBudUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2579E41EAD4B5C00B5F162 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A7D61C61E9E8A3000614776 /* FitBud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7D61C91E9E8A3000614776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A7D61CB1E9E8A3000614776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +90,11 @@
 		8ABB312E1EA6522F006272DC /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 		8ABB31321EA65EF2006272DC /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		8ABB31341EA65F25006272DC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		9363789CB59E85F7EE2DB91E /* Pods_FitBudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D594667BF9DEEB08185FDC /* Pods-FitBud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBud/Pods-FitBud.debug.xcconfig"; sourceTree = "<group>"; };
+		C1F450593990EF07BFF09BC8 /* Pods-FitBudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBudTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBudTests/Pods-FitBudTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0562FEBFB29E8BAD9A12A0 /* Pods-FitBud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBud.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBud/Pods-FitBud.release.xcconfig"; sourceTree = "<group>"; };
+		E372083A7A94C5811371729E /* Pods-FitBudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBudTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBudTests/Pods-FitBudTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EE5981D87432E256991331 /* Pods_FitBud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F3403B62AA9F2DCDFB3A7F /* Pods_FitBudTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B1A11494F2B80A6D801EC31 /* Pods_FitBudUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +132,8 @@
 				8A7D61DD1E9E8A3100614776 /* FitBudTests */,
 				8A7D61E81E9E8A3100614776 /* FitBudUITests */,
 				8A7D61C71E9E8A3000614776 /* Products */,
+				B6AF85EA2FD795BCDE39FB28 /* Pods */,
+				A611918CA4157CDBE40A66AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +157,7 @@
 				8A7D61D01E9E8A3000614776 /* Assets.xcassets */,
 				8ABB312B1EA53CCE006272DC /* Main.storyboard */,
 				8A7D61D21E9E8A3000614776 /* LaunchScreen.storyboard */,
+				8A2579E41EAD4B5C00B5F162 /* GoogleService-Info.plist */,
 				8A7D61D51E9E8A3000614776 /* Info.plist */,
 				8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */,
 				8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */,
@@ -195,6 +215,29 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		A611918CA4157CDBE40A66AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6073A6561CCA47519AF70B25 /* Pods_FitBud.framework */,
+				9363789CB59E85F7EE2DB91E /* Pods_FitBudTests.framework */,
+				61AE71577FCAFBA4721BF5FE /* Pods_FitBudUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6AF85EA2FD795BCDE39FB28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6D594667BF9DEEB08185FDC /* Pods-FitBud.debug.xcconfig */,
+				CB0562FEBFB29E8BAD9A12A0 /* Pods-FitBud.release.xcconfig */,
+				C1F450593990EF07BFF09BC8 /* Pods-FitBudTests.debug.xcconfig */,
+				E372083A7A94C5811371729E /* Pods-FitBudTests.release.xcconfig */,
+				0E0299395664B91EA7BB3D26 /* Pods-FitBudUITests.debug.xcconfig */,
+				51748DFCA57F23F3D067DF56 /* Pods-FitBudUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A7D61EE1E9E8A3100614776 /* Build configuration list for PBXNativeTarget "FitBud" */;
 			buildPhases = (
+				A9BD1C406918A7A4DAEEF5CE /* [CP] Check Pods Manifest.lock */,
 				8A7D61C21E9E8A3000614776 /* Sources */,
 				8A7D61C31E9E8A3000614776 /* Frameworks */,
 				8A7D61C41E9E8A3000614776 /* Resources */,
+				168639B5F4444AE7CFB4F3B4 /* [CP] Embed Pods Frameworks */,
+				3A3BD9826D9F7348A8B39527 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A7D61F11E9E8A3100614776 /* Build configuration list for PBXNativeTarget "FitBudTests" */;
 			buildPhases = (
+				8C65AEA4E0BA4E0658377CDA /* [CP] Check Pods Manifest.lock */,
 				8A7D61D61E9E8A3100614776 /* Sources */,
 				8A7D61D71E9E8A3100614776 /* Frameworks */,
 				8A7D61D81E9E8A3100614776 /* Resources */,
+				4FA3742228507A3E9D8A35FA /* [CP] Embed Pods Frameworks */,
+				ED545D73E42E800947EC6DE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A7D61F41E9E8A3100614776 /* Build configuration list for PBXNativeTarget "FitBudUITests" */;
 			buildPhases = (
+				CA0EDDE06C01C398A01574AB /* [CP] Check Pods Manifest.lock */,
 				8A7D61E11E9E8A3100614776 /* Sources */,
 				8A7D61E21E9E8A3100614776 /* Frameworks */,
 				8A7D61E31E9E8A3100614776 /* Resources */,
+				6ED482E9BE075CCE04FB1DFD /* [CP] Embed Pods Frameworks */,
+				ACDBA3A77058DFB1FBB4F437 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,6 +364,7 @@
 				8ABB312D1EA53CCE006272DC /* Main.storyboard in Resources */,
 				8A7D61D11E9E8A3000614776 /* Assets.xcassets in Resources */,
 				8ABB31281EA53C94006272DC /* db.jpg in Resources */,
+				8A2579E51EAD4B5C00B5F162 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +383,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		168639B5F4444AE7CFB4F3B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitBud/Pods-FitBud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A3BD9826D9F7348A8B39527 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitBud/Pods-FitBud-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FA3742228507A3E9D8A35FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitBudTests/Pods-FitBudTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ED482E9BE075CCE04FB1DFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitBudUITests/Pods-FitBudUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C65AEA4E0BA4E0658377CDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9BD1C406918A7A4DAEEF5CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ACDBA3A77058DFB1FBB4F437 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitBudUITests/Pods-FitBudUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA0EDDE06C01C398A01574AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED545D73E42E800947EC6DE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FitBudTests/Pods-FitBudTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A7D61C21E9E8A3000614776 /* Sources */ = {
@@ -498,12 +689,12 @@
 		};
 		8A7D61EF1E9E8A3100614776 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6D594667BF9DEEB08185FDC /* Pods-FitBud.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DGJ9JL7A3W;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = FitBud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Runthaplay.FitBud;
@@ -516,12 +707,12 @@
 		};
 		8A7D61F01E9E8A3100614776 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB0562FEBFB29E8BAD9A12A0 /* Pods-FitBud.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = DGJ9JL7A3W;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = FitBud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Runthaplay.FitBud;
@@ -533,6 +724,7 @@
 		};
 		8A7D61F21E9E8A3100614776 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1F450593990EF07BFF09BC8 /* Pods-FitBudTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +740,7 @@
 		};
 		8A7D61F31E9E8A3100614776 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E372083A7A94C5811371729E /* Pods-FitBudTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -563,6 +756,7 @@
 		};
 		8A7D61F51E9E8A3100614776 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0299395664B91EA7BB3D26 /* Pods-FitBudUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = DGJ9JL7A3W;
@@ -577,6 +771,7 @@
 		};
 		8A7D61F61E9E8A3100614776 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51748DFCA57F23F3D067DF56 /* Pods-FitBudUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = DGJ9JL7A3W;

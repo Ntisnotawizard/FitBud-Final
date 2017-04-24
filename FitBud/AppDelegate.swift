@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MagnetMax
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,36 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        /*
-        _ = self.window!.rootViewController
-        
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        
-        
-        let centerViewController = mainStoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        
-        let leftViewController = mainStoryboard.instantiateViewController(withIdentifier: "LeftSideViewController") as! LeftSideViewController
-        
-        let rightViewController = mainStoryboard.instantiateViewController(withIdentifier: "RightSideViewController") as! RightSideViewController
-        
-        
-        
-        let leftSideNav = UINavigationController(rootViewController: leftViewController)
-        let centerNav = UINavigationController(rootViewController: centerViewController)
-        let rightSideNav = UINavigationController(rootViewController: rightViewController)
-
-        
-        centerContainer = MMDrawerController(center: centerNav, leftDrawerViewController: leftSideNav, rightDrawerViewController: rightSideNav)
-        
-        
-        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.panningCenterView
-        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.panningCenterView
-
-        window!.rootViewController = centerContainer
-        window!.makeKeyAndVisible()
-        
-        */
+       
+         FIRApp.configure()
         return true
     }
 

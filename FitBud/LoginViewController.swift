@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -27,54 +29,48 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonTap(_ sender: Any) {
         
-        let userEmail = userEmailTextField.text
-        let userPassword = userPasswordTextField.text
+        _ = userEmailTextField.text
+        _ = userPasswordTextField.text
         
-        let userEmailStored = UserDefaults.standard.string(forKey: "userEmail")
-        
-        let userPasswordStored = UserDefaults.standard.string(forKey: "userPassword")
-        
-        if(userEmailStored == userEmail){
-            if(userPasswordStored == userPassword){
+        if self.userEmailTextField.text == "" || userPasswordTextField.text == "" {
+            
+            //Alert to tell the user that there was an error because they didn't fill anything in the textfields
+            
+            let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+            
+        } else {
+            
+            FIRAuth.auth()?.signIn(withEmail: self.userEmailTextField.text!, password: self.userPasswordTextField.text!) { (user, error) in
                 
-                // Login is successful
-                UserDefaults.standard.set(true, forKey:"isUserLoggedIn")
-                
-                UserDefaults.standard.synchronize()
-                
-                // dismiss login view
-                self.dismiss(animated: true, completion:nil)
+                if error == nil {
+                    
+                    //Print into the console if successfully logged in
+                    print("You have successfully logged in")
+                    
+                    //Go to the HomeViewController if the login is sucessful
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Main")
+                    self.present(vc!, animated: true, completion: nil)
+                    
+                } else {
+                    
+                    //Tells the user that there is an error and then gets firebase to tell them the error
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
             }
-            
-        
         }
-        
-        // check if email is correct
-        
-        if(userEmailStored != userEmail)
-        {
-            // Display alert message
-            
-            displayMyAlertMessage(userMessage: "This email does not exist")
-            
-            return
-            
-        }
-        
-        // check if password is correct
-        
-        if(userPasswordStored != userPassword)
-        {
-            // Display alert message
-            
-            displayMyAlertMessage(userMessage: "Wrong Password")
-            
-            return
-            
-        }
-        
+      
     }
-    
+ 
     func displayMyAlertMessage(userMessage:String) {
         
         let myAlert = UIAlertController(title:"Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert)
