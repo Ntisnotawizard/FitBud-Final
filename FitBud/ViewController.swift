@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class ViewController: UIViewController {
 
@@ -21,29 +23,26 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
-        let isUserLoggedIn = UserDefaults.standard.bool(forKey: "isUserLoggedIn")
-        
-        if(!isUserLoggedIn)
-        {
-        self.performSegue(withIdentifier: "loginView", sender: self)
-        }
-        
+ 
     }
 
     
     // enable logout
     
     @IBAction func logoutButtonTap(_ sender: Any) {
-        
-        UserDefaults.standard.set(false, forKey: "isUserLoggdIn")
-        UserDefaults.standard.synchronize()
-        
+        if FIRAuth.auth()?.currentUser != nil {
+            do {
+                try FIRAuth.auth()?.signOut()
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginView")
+                self.navigationController!.pushViewController(vc, animated: false)
+                
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        }
+       
         self.performSegue(withIdentifier: "loginView", sender: self)
-
-        
     }
     
-
 }
 
