@@ -14,6 +14,10 @@ class RegisterPageViewController: UIViewController {
 
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,11 +34,12 @@ class RegisterPageViewController: UIViewController {
         
         _ = userEmailTextField.text
         _ = userPasswordTextField.text
+        _ = usernameTextField.text
         
         
-        if userEmailTextField.text == "" {
+        if userEmailTextField.text == "" || usernameTextField.text == ""{
             
-            let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Error", message: "Please enter your email, password and a username", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
@@ -49,7 +54,7 @@ class RegisterPageViewController: UIViewController {
                 if error == nil {
                     print("You have successfully signed up")
                     
-                    //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
+                    // Goes to the home page where the users can explore activity channels for activities near them
                     
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "Main")
                     self.present(vc!, animated: true, completion: nil)

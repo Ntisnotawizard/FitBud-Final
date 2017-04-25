@@ -8,11 +8,11 @@
 
 import UIKit
 
-class LeftSideViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class LeftSideViewController: UIViewController {
     
     // populate the menu 
     
-    var profileItems:[String] = ["Settings", "Edit Profile", "Update Status", "About", "Logout"]
+   // var profileItems:[String] = ["Settings", "Edit Profile", "Update Status", "About", "Logout"]
     
 
     override func viewDidLoad() {
@@ -26,14 +26,14 @@ class LeftSideViewController: UIViewController, UITableViewDelegate, UITableView
         // Dispose of any resources that can be recreated.
     }
     
-    
+    /*
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     
     {
         return profileItems.count
-    }
+    }*/
 
-    
+    /*
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     
     {
@@ -42,7 +42,8 @@ class LeftSideViewController: UIViewController, UITableViewDelegate, UITableView
         mycell.profileItemLabel.text = profileItems[indexPath.row]
         
         return mycell
-    }
+        
+    }*/
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         
@@ -82,13 +83,10 @@ class LeftSideViewController: UIViewController, UITableViewDelegate, UITableView
             prepare(for: a, sender: <#T##Any?#>)
             
             default:
-            */
-        
-            
-        
-        
+ 
+
             print("\(profileItems[indexPath.row]) is selected")
-            
+            */
             
         //}
     }

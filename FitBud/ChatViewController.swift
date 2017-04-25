@@ -1,27 +1,31 @@
 //
-//  EditProfileViewController.swift
+//  ChatViewController.swift
 //  FitBud
 //
-//  Created by TheGrandWizard on 18/04/2017.
+//  Created by TheGrandWizard on 25/04/2017.
 //  Copyright © 2017 TheGrandWizard. All rights reserved.
 //
 
 import UIKit
 import Firebase
+import JSQMessagesViewController
 
-class EditProfileViewController: UIViewController {
+class ChatViewController: JSQMessagesViewController{
+    
+    
+    var channelRef: FIRDatabaseReference?
+    var channel: Channel? {
+        didSet {
+            title = channel?.name
+        }
+    }
 
-   
-    @IBOutlet weak var profilePictureImageView: UIImageView!
-    
-    @IBOutlet weak var usernameTextField: UITextField!
-    
-    @IBOutlet weak var passwordTextField: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // This sets the senderId based on the logged in Firebase user.
 
-        // Do any additional setup after loading the view.
+        self.senderId = FIRAuth.auth()?.currentUser?.uid
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,13 +43,5 @@ class EditProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func doneButtonTap(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-   
-    
-    @IBAction func chooseProfileButtonTap(_ sender: Any) {
-    }
-    
-    
+
 }

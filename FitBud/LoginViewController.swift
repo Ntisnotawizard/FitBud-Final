@@ -15,6 +15,19 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        //retrieve the destination view controller
+        let navVc = segue.destination as! UINavigationController
+        
+        let channelVc = navVc.viewControllers.first as! ViewController
+        
+        // set the senderDisplayName in Viewcontroller to the email provided in the email field by the user
+        
+        channelVc.senderDisplayName = userEmailTextField?.text
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
