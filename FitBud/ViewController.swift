@@ -17,7 +17,7 @@ enum Section: Int {
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     // store sender name
     var senderDisplayName: String?
