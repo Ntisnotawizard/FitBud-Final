@@ -14,7 +14,6 @@ class RegisterPageViewController: UIViewController {
 
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
-    @IBOutlet weak var repeatPasswordTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,8 +28,8 @@ class RegisterPageViewController: UIViewController {
 
     @IBAction func registerButtonTap(_ sender: Any) {
         
-        let userEmail = userEmailTextField.text
-        let userPassword = userPasswordTextField.text
+        _ = userEmailTextField.text
+        _ = userPasswordTextField.text
         
         
         if userEmailTextField.text == "" {
