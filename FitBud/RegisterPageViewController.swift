@@ -15,7 +15,6 @@ class RegisterPageViewController: UIViewController {
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     
-    @IBOutlet weak var usernameTextField: UITextField!
     
     
     override func viewDidLoad() {
@@ -34,10 +33,9 @@ class RegisterPageViewController: UIViewController {
         
         _ = userEmailTextField.text
         _ = userPasswordTextField.text
-        _ = usernameTextField.text
         
         
-        if userEmailTextField.text == "" || usernameTextField.text == ""{
+        if userEmailTextField.text == ""{
             
             let alertController = UIAlertController(title: "Error", message: "Please enter your email, password and a username", preferredStyle: .alert)
             
