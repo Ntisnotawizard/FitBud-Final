@@ -12,7 +12,7 @@
         <!--Chat View Controller-->
         <scene sceneID="soz-n7-r9W">
             <objects>
-                <viewController id="bpo-tJ-909" customClass="ChatViewController" customModule="FitBud" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chatViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bpo-tJ-909" customClass="ChatViewController" customModule="FitBud" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qWv-dz-d17"/>
                         <viewControllerLayoutGuide type="bottom" id="6ie-Rw-B4E"/>
@@ -22,10 +22,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1eo-LJ-Qgp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yla-zc-wbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241" y="-462"/>
+            <point key="canvasLocation" x="2023" y="-464"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
@@ -71,7 +72,7 @@
                                         <connections>
                                             <outlet property="createChannelButton" destination="fLB-9N-ES1" id="95U-t3-PlI"/>
                                             <outlet property="newChannelNameField" destination="sBb-Vu-htZ" id="45W-fh-ZAf"/>
-                                            <segue destination="bpo-tJ-909" kind="show" identifier="ShowChannel" id="aNX-XR-BPQ"/>
+                                            <segue destination="bpo-tJ-909" kind="show" identifier="ShowChannel" id="8yd-Lu-7KE"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ExistingChannel" id="o4f-BW-FdF">
@@ -97,8 +98,19 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Pn5-Rm-Bk6"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRY-Sp-Yrk">
+                                <rect key="frame" x="69" y="555" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.26626502229999999" green="0.49795192430000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Profile">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5Uv-kZ-hfo" kind="show" identifier="showProfile" id="5db-Kg-1oG"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo7-Xb-acC">
-                                <rect key="frame" x="147" y="550" width="80" height="30"/>
+                                <rect key="frame" x="236" y="555" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.084972219898793444" blue="0.093749294506941472" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Logout">
@@ -109,16 +121,10 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.83590286303405281" green="1" blue="0.70048903956424824" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Home" id="JlI-Kh-hYx">
-                        <barButtonItem key="leftBarButtonItem" title="Profile" id="S1e-fh-Kn5">
-                            <connections>
-                                <segue destination="5Uv-kZ-hfo" kind="show" id="w5l-Z6-u69"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Home" id="JlI-Kh-hYx"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Qbg-9M-Yoo" id="vxl-sW-PSW"/>
@@ -127,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="-463"/>
+            <point key="canvasLocation" x="3186.4000000000001" y="-463.71814092953525"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="69k-Yp-hCg">
@@ -178,6 +184,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonTap:" destination="nCf-k0-0Ie" eventType="touchUpInside" id="xrr-Yc-bhk"/>
+                                    <segue destination="5go-g1-n6X" kind="show" identifier="LoginSegue" id="AsG-FN-mOz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bId-V2-Xc2">
@@ -286,7 +293,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.074932591483156452" green="1" blue="0.36507285431318681" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.49624111787323222" green="1" blue="0.75940768967670436" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="userEmailTextField" destination="4fa-p3-zZ9" id="Xvr-4R-NEX"/>
@@ -295,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tSl-dy-8q2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3342" y="-464"/>
+            <point key="canvasLocation" x="5220" y="-464.6176911544228"/>
         </scene>
         <!--Reset Password View Controller-->
         <scene sceneID="BJB-eH-T18">
@@ -351,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8a-Jz-VGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300" y="-463"/>
+            <point key="canvasLocation" x="4178.3999999999996" y="-463.71814092953525"/>
         </scene>
         <!--Edit Profile-->
         <scene sceneID="s5Q-Pe-9Mw">
@@ -402,13 +409,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.90270279134433695" green="1" blue="0.87213289004488925" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit Profile" id="ZYl-qz-cxN">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="sgM-Os-t7I">
-                            <connections>
-                                <action selector="doneButtonTap:" destination="9dR-5y-HoH" id="wPs-cT-cT5"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Edit Profile" id="ZYl-qz-cxN"/>
                     <connections>
                         <outlet property="passwordTextField" destination="n6i-SV-Qxi" id="wxs-W6-tii"/>
                         <outlet property="profilePictureImageView" destination="7xt-ws-r9m" id="cxo-cB-buR"/>
@@ -450,7 +451,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="orO-nD-Wuc" kind="presentation" id="lEl-lj-aqS"/>
+                                    <segue destination="9dR-5y-HoH" kind="show" identifier="editProfileSegue" id="YdA-0A-D3Y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -462,28 +463,28 @@
             <point key="canvasLocation" x="2300" y="511.39430284857576"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="qp6-oL-GBs">
+        <scene sceneID="5kj-Wh-VyJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="orO-nD-Wuc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5go-g1-n6X" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MnQ-Cg-sk1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pDC-WM-ayb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="9dR-5y-HoH" kind="relationship" relationship="rootViewController" id="iJV-XK-Btn"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z24-TS-mPD"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hle-tZ-Obi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHy-3v-bXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="240.80000000000001" y="510.49475262368821"/>
+            <point key="canvasLocation" x="3186" y="-1406"/>
         </scene>
     </scenes>
     <resources>
         <image name="gm.jpg" width="1000" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EP2-kC-aR2"/>
+        <segue reference="Ei7-6m-RA9"/>
     </inferredMetricsTieBreakers>
 </document>

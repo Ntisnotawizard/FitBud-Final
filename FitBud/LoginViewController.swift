@@ -14,8 +14,10 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
-    /*
+    
+    
     // MARK: Navigation
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         
@@ -28,6 +30,14 @@ class LoginViewController: UIViewController {
         
         channelVc.senderDisplayName = userEmailTextField?.text
     }*/
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if let navVc = segue.destination as? UINavigationController, let channelVc = navVc.viewControllers.first as? ViewController {
+            //Now you have a reference to your ChatVC, and you can set the DisplayName
+            channelVc.senderDisplayName = userEmailTextField?.text
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

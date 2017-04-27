@@ -113,7 +113,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
-    // MARK: View Lifecycle
+    // View List
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Activity Channels"
@@ -150,6 +150,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             chatVc.channelRef = channelRef.child(channel.id)
         }
     }
+    
+    
     
 }
 
