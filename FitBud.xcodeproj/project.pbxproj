@@ -53,6 +53,7 @@
 		51748DFCA57F23F3D067DF56 /* Pods-FitBudUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBudUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitBudUITests/Pods-FitBudUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6073A6561CCA47519AF70B25 /* Pods_FitBud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AE71577FCAFBA4721BF5FE /* Pods_FitBudUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBudUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A1510A91EB281D2008E1E64 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		8A2579E41EAD4B5C00B5F162 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8A29CA3B1EAE54F7007E7351 /* resetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = resetPasswordViewController.swift; sourceTree = "<group>"; };
 		8A29CA421EAEAD0B007E7351 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
@@ -221,6 +222,7 @@
 		A611918CA4157CDBE40A66AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A1510A91EB281D2008E1E64 /* AdSupport.framework */,
 				6073A6561CCA47519AF70B25 /* Pods_FitBud.framework */,
 				9363789CB59E85F7EE2DB91E /* Pods_FitBudTests.framework */,
 				61AE71577FCAFBA4721BF5FE /* Pods_FitBudUITests.framework */,
