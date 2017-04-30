@@ -16,8 +16,11 @@ class ChatViewController: JSQMessagesViewController{
     
     // create outgoing and incoming message bubbles
     
-    //lazy var outgoingBubbleImageView: JSQMessagesBubbleImage = self.setupOutgoingBubble()
-    //lazy var incomingBubbleImageView: JSQMessagesBubbleImage = self.setupIncomingBubble()
+    lazy var outgoingBubbleImageView: JSQMessagesBubbleImage = self.setupOutgoingBubble()
+    lazy var incomingBubbleImageView: JSQMessagesBubbleImage = self.setupIncomingBubble()
+    
+    private lazy var messageRef: FIRDatabaseReference = self.channelRef!.child("messages")
+    private var newMessageRefHandle: FIRDatabaseHandle?
  
     var channelRef: FIRDatabaseReference?
     var channel: Channel? {
@@ -54,8 +57,8 @@ class ChatViewController: JSQMessagesViewController{
         super.viewDidLoad()
         
         // No avatars
-        collectionView!.collectionViewLayout.incomingAvatarViewSize = CGSize.zero
-        collectionView!.collectionViewLayout.outgoingAvatarViewSize = CGSize.zero
+        //collectionView!.collectionViewLayout.incomingAvatarViewSize = CGSize.zero
+        //collectionView!.collectionViewLayout.outgoingAvatarViewSize = CGSize.zero
         
         // This sets the senderId based on the logged in Firebase user.
 
@@ -72,14 +75,14 @@ class ChatViewController: JSQMessagesViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
+        /*
         // messages from someone else
-        addMessage(withId: "foo", name: "Mr.Bolt", text: "I am so fast!")
+        addMessage(withId: "Dft", name: "Mr. crippling", text: "depression!")
         // messages sent from local sender
-        addMessage(withId: senderId, name: "Me", text: "I bet I can run faster than you!")
-        addMessage(withId: senderId, name: "Me", text: "I like to run!")
+        addMessage(withId: senderId, name: "Me", text: "Idgaf pure gym girls doe!")
+        addMessage(withId: senderId, name: "Me", text: "I like that!")
         // animates the receiving of a new message on the view
-        finishReceivingMessage()
+        finishReceivingMessage()*/
     }
 
     /*
