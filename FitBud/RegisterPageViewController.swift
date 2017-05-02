@@ -37,7 +37,7 @@ class RegisterPageViewController: UIViewController {
         
         if userEmailTextField.text == ""{
             
-            let alertController = UIAlertController(title: "Error", message: "Please enter your email, password and a username", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Error", message: "Please enter your email and a password", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
@@ -68,6 +68,8 @@ class RegisterPageViewController: UIViewController {
             }
         }
     }
+    
+
     
     func displayMyAlertMessage(userMessage:String) {
         

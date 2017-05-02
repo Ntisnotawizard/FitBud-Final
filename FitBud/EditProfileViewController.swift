@@ -15,12 +15,11 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var profilePictureImageView: UIImageView!
     
     @IBOutlet weak var usernameTextField: UITextField!
-    
-    @IBOutlet weak var passwordTextField: UITextField!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -28,6 +27,7 @@ class EditProfileViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

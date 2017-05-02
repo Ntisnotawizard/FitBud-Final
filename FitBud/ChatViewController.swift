@@ -16,8 +16,8 @@ class ChatViewController: JSQMessagesViewController{
     
     // create outgoing and incoming message bubbles
     
-    lazy var outgoingBubbleImageView: JSQMessagesBubbleImage = self.setupOutgoingBubble()
-    lazy var incomingBubbleImageView: JSQMessagesBubbleImage = self.setupIncomingBubble()
+    //lazy var outgoingBubbleImageView: JSQMessagesBubbleImage = self.setupOutgoingBubble()
+    //lazy var incomingBubbleImageView: JSQMessagesBubbleImage = self.setupIncomingBubble()
     
     private lazy var messageRef: FIRDatabaseReference = self.channelRef!.child("messages")
     private var newMessageRefHandle: FIRDatabaseHandle?
@@ -43,7 +43,7 @@ class ChatViewController: JSQMessagesViewController{
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return messages.count // return number of messages in each section
     }
-    
+    /*
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath!) -> JSQMessageBubbleImageDataSource! {
         let message = messages[indexPath.item] // retrieve message
         if message.senderId == senderId { // check user status to return either outgoing or incoming image
@@ -51,7 +51,7 @@ class ChatViewController: JSQMessagesViewController{
         } else { // return incoming image view
             return incomingBubbleImageView
         }
-    }
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()

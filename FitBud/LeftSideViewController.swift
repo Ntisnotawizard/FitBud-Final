@@ -10,9 +10,15 @@ import UIKit
 
 class LeftSideViewController: UIViewController {
     
+    @IBOutlet weak var usernameLabel: UILabel!
 
+    var usernameLabelText = String()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        usernameLabel.text = usernameLabelText
 
         // Do any additional setup after loading the view.
     }

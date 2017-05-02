@@ -17,20 +17,7 @@ class LoginViewController: UIViewController {
     
     
     // MARK: Navigation
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        
-        //retrieve the destination view controller
-        let navVc = segue.destination as! UINavigationController
-        
-        let channelVc = navVc.viewControllers.first as! ViewController
-        
-        // set the senderDisplayName in Viewcontroller to the email provided in the email field by the user
-        
-        channelVc.senderDisplayName = userEmailTextField?.text
-    }*/
-    
+   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         if let navVc = segue.destination as? UINavigationController, let channelVc = navVc.viewControllers.first as? ViewController {
@@ -52,14 +39,14 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonTap(_ sender: Any) {
         
-        _ = userEmailTextField.text
-        _ = userPasswordTextField.text
+        let userEmailTextField = self.userEmailTextField.text
+        let userPasswordTextField = self.userPasswordTextField.text
         
-        if self.userEmailTextField.text == "" || userPasswordTextField.text == "" {
+        if self.userEmailTextField.text == "" || self.userPasswordTextField.text == "" {
             
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields
             
-            let alertController = UIAlertController(title: "Error", message: "Please enter an email and password.", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Error", message: "Please enter an email and a password.", preferredStyle: .alert)
             
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
@@ -93,6 +80,8 @@ class LoginViewController: UIViewController {
         }
       
     }
+    
+   
  
     func displayMyAlertMessage(userMessage:String) {
         
@@ -105,6 +94,7 @@ class LoginViewController: UIViewController {
         self.present(myAlert, animated: true, completion: nil)
         
     }
+    
     
 
     /*

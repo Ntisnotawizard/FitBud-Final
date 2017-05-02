@@ -14,7 +14,6 @@
 		8A29CA431EAEAD0B007E7351 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29CA421EAEAD0B007E7351 /* Channel.swift */; };
 		8A29CA471EAF6DE9007E7351 /* CreateChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29CA461EAF6DE9007E7351 /* CreateChannelCell.swift */; };
 		8A29CA4A1EAFAE67007E7351 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29CA491EAFAE67007E7351 /* ChatViewController.swift */; };
-		8A29CA4C1EAFB082007E7351 /* LeftSideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29CA4B1EAFB082007E7351 /* LeftSideViewController.swift */; };
 		8A7D61CA1E9E8A3000614776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61C91E9E8A3000614776 /* AppDelegate.swift */; };
 		8A7D61CC1E9E8A3000614776 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7D61CB1E9E8A3000614776 /* ViewController.swift */; };
 		8A7D61D11E9E8A3000614776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7D61D01E9E8A3000614776 /* Assets.xcassets */; };
@@ -27,7 +26,7 @@
 		8ABB31291EA53C94006272DC /* gm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB31261EA53C94006272DC /* gm.jpg */; };
 		8ABB312A1EA53C94006272DC /* hdh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB31271EA53C94006272DC /* hdh.jpg */; };
 		8ABB312D1EA53CCE006272DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABB312B1EA53CCE006272DC /* Main.storyboard */; };
-		8ABB31331EA65EF2006272DC /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABB31321EA65EF2006272DC /* EditProfileViewController.swift */; };
+		8AE61BEC1EB8BFD20019E3CB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1510A91EB281D2008E1E64 /* AdSupport.framework */; };
 		A6F3403B62AA9F2DCDFB3A7F /* Pods_FitBudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9363789CB59E85F7EE2DB91E /* Pods_FitBudTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +58,6 @@
 		8A29CA421EAEAD0B007E7351 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		8A29CA461EAF6DE9007E7351 /* CreateChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChannelCell.swift; sourceTree = "<group>"; };
 		8A29CA491EAFAE67007E7351 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		8A29CA4B1EAFB082007E7351 /* LeftSideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideViewController.swift; sourceTree = "<group>"; };
 		8A7D61C61E9E8A3000614776 /* FitBud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7D61C91E9E8A3000614776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A7D61CB1E9E8A3000614776 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 		8ABB31261EA53C94006272DC /* gm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gm.jpg; sourceTree = "<group>"; };
 		8ABB31271EA53C94006272DC /* hdh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hdh.jpg; sourceTree = "<group>"; };
 		8ABB312C1EA53CCE006272DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8ABB31321EA65EF2006272DC /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		9363789CB59E85F7EE2DB91E /* Pods_FitBudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitBudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D594667BF9DEEB08185FDC /* Pods-FitBud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBud/Pods-FitBud.debug.xcconfig"; sourceTree = "<group>"; };
 		C1F450593990EF07BFF09BC8 /* Pods-FitBudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitBudTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FitBudTests/Pods-FitBudTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE61BEC1EB8BFD20019E3CB /* AdSupport.framework in Frameworks */,
 				07EE5981D87432E256991331 /* Pods_FitBud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,7 +118,6 @@
 				8A29CA3B1EAE54F7007E7351 /* resetPasswordViewController.swift */,
 				8A7D61F71E9E93C000614776 /* RegisterPageViewController.swift */,
 				8A7D61F91E9E9D3A00614776 /* LoginViewController.swift */,
-				8ABB31321EA65EF2006272DC /* EditProfileViewController.swift */,
 			);
 			name = "User Data";
 			sourceTree = "<group>";
@@ -140,7 +137,6 @@
 		8A29CA3F1EAE582A007E7351 /* Additional Functions */ = {
 			isa = PBXGroup;
 			children = (
-				8A29CA4B1EAFB082007E7351 /* LeftSideViewController.swift */,
 			);
 			name = "Additional Functions";
 			sourceTree = "<group>";
@@ -532,14 +528,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A29CA4C1EAFB082007E7351 /* LeftSideViewController.swift in Sources */,
 				8A7D61FA1E9E9D3A00614776 /* LoginViewController.swift in Sources */,
 				8A29CA431EAEAD0B007E7351 /* Channel.swift in Sources */,
 				8A29CA471EAF6DE9007E7351 /* CreateChannelCell.swift in Sources */,
 				8A7D61CC1E9E8A3000614776 /* ViewController.swift in Sources */,
 				8A7D61CA1E9E8A3000614776 /* AppDelegate.swift in Sources */,
 				8A7D61F81E9E93C000614776 /* RegisterPageViewController.swift in Sources */,
-				8ABB31331EA65EF2006272DC /* EditProfileViewController.swift in Sources */,
 				8A29CA4A1EAFAE67007E7351 /* ChatViewController.swift in Sources */,
 				8A29CA3C1EAE54F7007E7351 /* resetPasswordViewController.swift in Sources */,
 			);
